@@ -25,5 +25,12 @@ class LearningHash
     end
     string
   end
-  
+
+  def key_and_value_stringer(hash)
+    string = ''
+    hash.each_pair do |key, value|
+      string += key.to_s + value.to_s
+    end
+    string
+  end
 end

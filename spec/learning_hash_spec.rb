@@ -78,7 +78,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#key_and_value_stringer' do
+  describe '#key_and_value_stringer' do
     inputs_and_outputs = [
       {input: {foo: 'bar', 'baz' => 'hi'}, output: 'foobarbazhi'},
       {input: {[1] => [1,2]}, output: '[1][1, 2]'},
