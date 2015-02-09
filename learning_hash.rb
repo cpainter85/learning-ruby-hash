@@ -17,4 +17,13 @@ class LearningHash
     string
     # hint see http://ruby-doc.org/core-2.1.5/Hash.html#method-i-each_key
   end
+
+  def value_stringer(hash)
+    string = ''
+    hash.each_value do |value|
+      string << value.to_s
+    end
+    string
+  end
+  
 end
