@@ -33,4 +33,17 @@ class LearningHash
     end
     string
   end
+
+  def reversed_key_and_value_stringer(hash)
+    key_and_value_stringer(hash).reverse
+  end
+
+  def polite_is_empty?(hash)
+    if hash.empty?
+      return "Yes ma'am"
+    else
+      return "No ma'am"
+    end
+  end
+
 end
